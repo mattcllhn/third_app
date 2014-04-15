@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-third_app::Application.config.secret_key_base = secure_token
+ThirdApp::Application.config.secret_key_base = secure_token
