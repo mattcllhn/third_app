@@ -39,7 +39,18 @@ it "should have the title 'Home'" do
       expect(page).to have_title("Ruby on Rails Tutorial Sample App | About Us")
     end
   end
-  
+  # contacts page tests
+  describe "Contacts" do
+  	it "should have content 'contacts'" do
+  		visit '/static_pages/contacts'
+  			expect(page).to have_content('Contacts')
+  	end
+
+  	it "should have the title 'Contacts'" do
+  		visit'/static_pages/contacts'
+      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Contacts")
+end
+  end
 end
 
 

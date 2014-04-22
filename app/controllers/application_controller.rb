@@ -7,6 +7,8 @@ def help
 end
 def about
 end
+def contacts
+end
 
 
   protect_from_forgery with: :exception
