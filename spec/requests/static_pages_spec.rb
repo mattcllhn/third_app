@@ -10,6 +10,20 @@ describe "Static pages" do
     it { should have_content('Sample App') }
     it { should have_title(full_title('')) }
     it { should_not have_title('| Home') }
+    
+
+ #   before {click_link "About"} 
+
+#    it {should have_title ('About Us')}
+#   click_link "Help"
+   # expect(page).to have_title(full_title("Help"))
+   # click_link "Contact"
+    #expect(page).to # fill in
+    #click_link "Home"
+    #click_link "Sign up now!"
+    #expect(page).to # fill in
+    #click_link "sample app"
+    #expect(page).to # fill in
   end
 
   describe "Help page" do
